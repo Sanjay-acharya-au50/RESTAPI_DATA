@@ -1,12 +1,12 @@
 // console.log("hello world")
-const cors = require("cors")
+const cors = require("cors");
 
 const express = require("express");
 
 const app = express();
-app.use(express.json())
+app.use(express.json());
 
-app.use(cors())
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.json([
@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 17.0,
       image: "https://i.imgur.com/8B8YLOo.jpg",
+      quantity: 1,
     },
     {
       id: 1,
@@ -31,6 +32,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 20.0,
       image: "https://i.imgur.com/OHHctnf.jpg",
+      quantity: 1,
     },
     {
       id: 2,
@@ -48,6 +50,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 25.75,
       image: "https://i.imgur.com/3ZTwCfz.png",
+      quantity: 1,
     },
     {
       id: 3,
@@ -68,6 +71,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 30.25,
       image: "https://i.imgur.com/dyoOLCO.png",
+      quantity: 1,
     },
     {
       id: 4,
@@ -86,6 +90,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 27.25,
       image: "https://i.imgur.com/wOEuXuV.jpg",
+      quantity: 1,
     },
     {
       id: 5,
@@ -104,6 +109,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 27.25,
       image: "https://i.imgur.com/48Zw4K3.png",
+      quantity: 1,
     },
     {
       id: 6,
@@ -121,6 +127,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 35.15,
       image: "https://i.imgur.com/MDrTvkI.jpg",
+      quantity: 1,
     },
     {
       id: 7,
@@ -139,6 +146,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 27.25,
       image: "https://i.imgur.com/0vPtSSO.png",
+      quantity: 1,
     },
     {
       id: 8,
@@ -157,6 +165,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 20.0,
       image: "https://i.imgur.com/lZtwJgy.png",
+      quantity: 1,
     },
     {
       id: 9,
@@ -174,6 +183,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 19.8,
       image: "https://i.imgur.com/SoZu61g.png",
+      quantity: 1,
     },
     {
       id: 10,
@@ -192,6 +202,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 27.25,
       image: "https://i.imgur.com/mqTgvgl.png",
+      quantity: 1,
     },
     {
       id: 11,
@@ -203,6 +214,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 27.25,
       image: "https://i.imgur.com/k6IGrUd.png",
+      quantity: 1,
     },
 
     // ----------------
@@ -217,6 +229,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 28.0,
       image: "https://i.imgur.com/IXDJ52k.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -233,6 +246,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 28.0,
       image: "https://i.imgur.com/3jKSuUu.png",
+      quantity: 1,
     },
 
     {
@@ -254,6 +268,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 20,
       image: "https://i.imgur.com/QWXH2NC.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -276,6 +291,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 20,
       image: "https://i.imgur.com/qChqf83.png",
+      quantity: 1,
     },
     {
       id: 2,
@@ -296,6 +312,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 20,
       image: "https://i.imgur.com/Ph0IjrX.png",
+      quantity: 1,
     },
 
     {
@@ -308,6 +325,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 15,
       image: "https://i.imgur.com/7WbfaDN.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -319,6 +337,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 12,
       image: "https://i.imgur.com/Mgsc3IZ.png",
+      quantity: 1,
     },
     {
       id: 2,
@@ -330,6 +349,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 15,
       image: "https://i.imgur.com/OWIVhWX.png",
+      quantity: 1,
     },
     {
       id: 3,
@@ -341,6 +361,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 15,
       image: "https://i.imgur.com/AsldA7x.png",
+      quantity: 1,
     },
 
     {
@@ -353,6 +374,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 5,
       image: "https://i.imgur.com/nJ6LeWv.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -364,6 +386,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 5,
       image: "https://i.imgur.com/1WDkfme.png",
+      quantity: 1,
     },
     {
       id: 2,
@@ -375,6 +398,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 5,
       image: "https://i.imgur.com/qP4Nx1x.jpg",
+      quantity: 1,
     },
     {
       id: 3,
@@ -386,6 +410,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4.5,
       image: "https://i.imgur.com/yYuuaL1.jpg",
+      quantity: 1,
     },
     {
       id: 4,
@@ -397,6 +422,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4.5,
       image: "https://i.imgur.com/0nyJk19.jpg",
+      quantity: 1,
     },
     {
       id: 5,
@@ -408,6 +434,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 5,
       image: "https://i.imgur.com/dsHumXE.jpg",
+      quantity: 1,
     },
 
     {
@@ -420,6 +447,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -431,6 +459,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 2,
@@ -442,6 +471,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 3,
@@ -453,6 +483,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 4,
@@ -464,6 +495,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 5,
@@ -475,6 +507,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/OmejA2J.png",
+      quantity: 1,
     },
     {
       id: 6,
@@ -486,6 +519,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/k5Dg7hZ.png",
+      quantity: 1,
     },
     {
       id: 7,
@@ -497,6 +531,7 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 4,
       image: "https://i.imgur.com/OmejA2J.png",
+      quantity: 1,
     },
 
     {
@@ -509,6 +544,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 6,
       image: "https://i.imgur.com/sxP6sJt.png",
+      quantity: 1,
     },
     {
       id: 1,
@@ -520,6 +556,7 @@ app.get("/", (req, res) => {
       vegetarian: true,
       price: 6,
       image: "https://i.imgur.com/i3Jintb.png",
+      quantity: 1,
     },
     {
       id: 2,
@@ -531,11 +568,10 @@ app.get("/", (req, res) => {
       vegetarian: false,
       price: 10,
       image: "https://i.imgur.com/HNX30U9.png",
+      quantity: 1,
     },
   ]);
 });
-
-
 
 app.listen(5000, () => {
   console.log("server load");
